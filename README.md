@@ -1,3 +1,5 @@
-#Question: How can I make sure that 'controller' and 'Mouse' are defined in separate files, yet still allow the 'nameIsOriginal' function to make use of the controller.mice array?
+There's a controller for functionality and a Mouse object constructor. New mice must not have the same name as any mouse in the controller.mice array. Additionally, this error checking must happen in an event listener attached to the Mouse.name attribute. So, that event handler needs to be able to access controller.mice in order to compare the new mouse with the existing ones.
 
-#The fact that there's a listener on the mouse.name attribute that needs to run the 'nameIsOriginal' function is the real sticker, I think. Is it just a matter of passing a nameIsOriginal function to the Mouse constructor? I think that might work, but it doesn't quite sit right with me for some reason...
+Question: How can I make sure that 'controller' and 'Mouse' are defined in separate files, yet still allow the 'nameIsOriginal' function to make use of the controller.mice array?
+
+The fact that there's a listener on the mouse.name attribute that needs to run the 'nameIsOriginal' function is the real sticker, I think. Is it just a matter of passing a nameIsOriginal function to the Mouse constructor? I think that might work, but it doesn't quite sit right with me for some reason...
