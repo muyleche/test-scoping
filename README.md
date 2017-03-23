@@ -1,0 +1,3 @@
+#Question: How can I make sure that 'controller' and 'Mouse' are defined in separate files, yet still allow the 'nameIsOriginal' function to make use of the controller.mice array?
+
+#The fact that there's a listener on the mouse.name attribute that needs to run the 'nameIsOriginal' function is the real sticker, I think. Is it just a matter of passing a nameIsOriginal function to the Mouse constructor? I think that might work, but it doesn't quite sit right with me for some reason...

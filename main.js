@@ -60,5 +60,3 @@ var controller = (function)() {
   // Return the controller as a referenceable object.
   return self;
 })();
-
-//Question: How can I make sure that 'controller' and 'Mouse' are defined in separate files, yet still allow the 'nameIsOriginal' function to make use of the controller.mice array?
